@@ -1,17 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .hero-section{
     background-image: url(../src/assets/img/hero-bg.png);
 }
-button{
+.button{
     background-color: rgba(255, 255, 255, 0.4);
 }
-button:hover{
+.button:hover{
     background-color: rgba(255, 255, 255, 0.5);
 
 }
 .stats{
     background-color: rgba(0, 128, 128, 0.61);
+}
+@layer base {
+    body {
+      @apply:bg-grey-3 font-primary text-base leading-relaxed;
+    }
+    .section {
+      @apply py-[50px] lg:py-[70px];
+    }
+    .title {
+      @apply text-2xl lg:text-[40px] leading-tight font-semibold mb-4;
+    }
+    .subtitle {
+      @apply text-[18px] lg:text-[20px] leading-relaxed mb-5 lg:mb-9;
+    }
+  }
+
+.pad{
+  padding-top: 100px;
+}
+.marg{
+  margin-top: 15%;
+}
+.text-grey{
+  color: gray;
+}
+.newsletter{
+  background-image: url(../src/assets/img/newsletter.png);
+}
+.primary{
+  background-color: black;
 }
