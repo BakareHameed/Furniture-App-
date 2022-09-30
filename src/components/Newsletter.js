@@ -11,7 +11,7 @@ const Newsletter = () => {
           <p className='text-xl font-light mb-10'>{subtitle}</p>
           <div className='flex flex-col lg:flex-row gap-[22px]'>
             <input 
-              className='h-[60px] px-6 outline-none placeholder:text-gray-400 rounded-lg lg:flex-1'
+              className='h-[60px] px-6 outline-none placeholder:text-gray-400 text-gray-400 rounded-lg lg:flex-1'
               type="text"
               placeholder={placeholder}
             

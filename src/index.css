@@ -21,6 +21,9 @@
     background-color: rgba(0, 128, 128, 0.61);
 }
 @layer base {
+    .sidebar {
+      @apply: text-2xl font-primary
+    }
     body {
       @apply:bg-grey-3 font-primary text-base leading-relaxed;
     }
@@ -36,7 +39,7 @@
   }
 
 .pad{
-  padding-top: 100px;
+  padding-top: 20%;
 }
 .marg{
   margin-top: 15%;
@@ -48,5 +51,8 @@
   background-image: url(../src/assets/img/newsletter.png);
 }
 .primary{
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.bg-accent:hover{
+  background-color: rgba(0, 128, 128, 0.61)
 }
